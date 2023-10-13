@@ -85,8 +85,8 @@ body {
     align-items: center;
     margin-bottom: 20px;
 }
-.product-checkbox {
-    margin-right: 10px;
+input#product1.product-checkbox{
+    margin-right: 15px;
 }
 .product.selected {
     background-color: #f2f2f2;

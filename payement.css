@@ -107,7 +107,7 @@ input {
 }
 
 button {
-    background-color: #333;
+    background-color: #A18A68;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -117,7 +117,7 @@ button {
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #686AA1;
 }
 
 

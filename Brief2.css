@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo{
+    font-family:'Allerta Stencil';
+    font-size: 22px;
+    color:#A18A68;
+    display: flex;
+    justify-content: flex-start;
+
+}
+.logo span{
+    font-family:'Allerta Stencil';
+    font-size: 22px;
+    color:#686AA1;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background: transparent;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #FEFEFE;
+
+}
+header nav .logo {
+    margin: 20px 0;
+}
+header nav .items {
+    display: flex;
+}
+header nav ul {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    gap: 40px;
+    border-right: 2px solid #6666665e;
+    padding-right: 30px;
+}
+header nav ul li {
+    list-style: none;
+}
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    transition: 0.3 ease;
+}
+header nav ul li a:hover{
+    color: #686AA1;
+    
+}
+header nav .search-wrapper svg:first-child {
+    margin-right: 15px;
+}
+header nav .search-wrapper svg:last-child {
+    margin-left: 15px;
+}
+#background{
+    background-image:url(./Img\ 01.png);
+    height: 88vh;
+    width: 95%;
+    background-size: cover;
+    margin-left:40px ;
+    margin-right: 40px;
+    color: #FEFEFE;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+}
+#background p {
+    font-size: 30px;
+
+}
+#background .notion {
+    margin-top: 120px;
+    margin-left: 30px;
+}
+
+#background .button{
+    margin-left: 20px;
+    width: 200px;
+    height: 65px;
+    border: 2px solid;
+    background-color: none;
+    border-radius: 15px;
+    font-family: 'DM Sans';
+    color: #FEFEFE;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    }
+.custom-album{
+    margin-left: 40px;
+}
+.custom-card {
+        background-color: #FEFEFE;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin: 10px;
+        padding: 20px;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 377px;
+        height: 472px;
+    }
+    .custom-album-inner p{
+        font-size: 21px;
+        margin-top: 20px;
+    }
+
+    .custom-album-innertitle a{
+    font-size: 21px;
+    margin-top: 20px;
+    color:gray;
+    text-decoration: none;
+    }
+    .custom-album-innertitle{
+        display: flex;
+        gap: 900px;
+        margin: 30px;
+        
+    }
+    .custom-card img {
+        width: 337px;
+        height: 330px;
+    }
+    .custom-card-title{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .custom-card-description{
+        display: flex;
+        justify-content: flex-start;
+        color: grey;
+    }
+    .custom-product .about{
+        width: 85%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+    }
+    .custom-product h1{
+        font-family:'DM Sans';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        padding-top: 5px;
+    }
+    .custom-product span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .custom-product p{
+        font-family:'DM Sans'sans-serif;
+        font-size: 20px;
+        margin-left: 40px;
+        text-align: justify;
+        
+    }
+    .image1 h2{
+        padding-top: 20px;
+        font-size: 20px;
+        margin-left: 40px;
+    }
+    .custom-product .image1 img{
+    margin-top:10px;
+    height: 60vh;
+    width: 90%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+
+    }
+    .custom-product .image1 .text{
+        margin-top:20px;
+        height: 60px;
+        width: 90%;
+        font-family:'DM Sans'sans-serif;
+        font-size: 20px;
+        margin-left: 40px;
+    }
+    .custom-product .image1 ul{
+        padding-top: 40px;
+        font-size: 20px;
+        padding-left: 80px;
+        display: block;
+    }
+    .image2 h2{
+        padding-top: 40px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        margin-left: 50px;
+    }
+    .custom-product .image2 img{
+        margin-top:10px;
+        height: 60vh;
+        width: 90%;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+    
+        }
+        .custom-product .image2 .text{
+            margin-top:20px;
+            height: 60px;
+            width: 90%;
+            font-family:'DM Sans'sans-serif;
+            font-size: 20px;
+            margin-left: 40px;
+        }
+        section{
+            padding-bottom: 160px;
+        }
+        footer{
+            margin-left: 30px;
+            gap: 40px;
+            border-top: 2px solid #6666665e;
+            padding-left: 30px; 
+            padding-top: 80px;
+            display: flex;
+            justify-content: space-between;
+        }
+        footer .menu {
+            display:flex;
+            gap: 20px;
+            text-decoration: none;
+            padding-bottom: 20px;
+        }
+        footer .menu a{
+            color: grey;
+            text-decoration: none;
+        }
+        footer{
+            width: 85%;
+        
+        }
+        .footer{
+            display: flex;  
+            justify-content: space-between;
+            margin: 20px 0;
+            color: #707070;
+        }
+        .top{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom:8px ;
+            margin-bottom: 10px;
+            border-bottom: #333 solid 1px;
+        }
+        .input{
+            width: 30%;
+        }
+        .email{
+            border: none;
+            width: 300px;
+        }
+        .social{
+            display: flex;
+            justify-content: end;
+            gap: 10px;
+            margin-top: 20px;
+        }

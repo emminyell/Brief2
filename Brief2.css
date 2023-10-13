@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 .logo{
     font-family:'Allerta Stencil';
@@ -161,6 +162,10 @@ header nav .search-wrapper svg:last-child {
         font-size: 20px;
         padding-top: 5px;
     }
+    .custom-product .h1custom-card-title{
+        color: black;
+    }
+
     .custom-product span{
         display: flex;
         justify-content: center;

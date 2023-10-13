@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
 }
 .logo{
     font-family:'Allerta Stencil';
@@ -147,7 +148,7 @@ input#quantity {
     display: block;
     margin: 20px;
     text-align: center;
-
+    padding-top: 5px;
 }
 .product-description{
     margin-top: 10px;

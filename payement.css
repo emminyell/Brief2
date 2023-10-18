@@ -78,6 +78,12 @@ h1 {
     color: #fff;
     text-align: center;
 }
+main p{
+    font-size: 20px;
+    color: #A18A68;
+    text-align: center;
+}
+    
 .info{
         background-color: #fff;
         border: 1px solid #ccc;

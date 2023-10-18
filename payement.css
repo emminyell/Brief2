@@ -71,7 +71,7 @@ main{
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    gap:80px;
+    gap:140px;
 }
 h1 {
     font-size: 20px;

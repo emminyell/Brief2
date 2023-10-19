@@ -142,7 +142,7 @@ header nav .search-wrapper svg:last-child {
     .custom-card-title{
         display: flex;
         justify-content: flex-start;
-        color:black;
+        color: black;
     }
     .custom-card-description{
         display: flex;

@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
+    background-color: #FEFEFE;
 }
 .logo{
     font-family:'Allerta Stencil';
@@ -20,20 +21,30 @@
     color:#686AA1;
 }
 
+header{
+    position: sticky;
+    top: 0;
+    background: transparent;
+}
 header nav {
-    background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
-    margin-bottom: 10px;
+    background-color: #FEFEFE;
+
 }
 header nav .logo {
     margin: 20px 0;
 }
 header nav .items {
     display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+nav .items .search-wrapper a svg:hover{
+    fill: #000;
 }
 header nav ul {
     display: flex;
@@ -70,19 +81,20 @@ body {
 
 .cart {
     width: 88%;
-    height: 170vh;
-    margin: 0 auto;
+    height: 100vh;
     background-color: #fff;
-    padding: 20px;
+    padding-left: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    display:block;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
 }
 
 .product {
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
+    height: fit-content;
 }
 
 .product img {
@@ -153,55 +165,23 @@ input#quantity {
 .product-description{
     margin-top: 10px;
 }
-#custom-divs .div1{
-    margin-top: 40px;
-    width: 98%;
-    height: 60px;
-    border-top:2px solid gray;
-    display: flex;
-    justify-content: baseline;
-    padding-top:  20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    gap: 870px;
-}
-#custom-divs .div{
-    display: block;
-    justify-content: flex-end;
-}
+
 #custom-divs a{
 text-decoration: none;
 color: gray;
 }
-#custom-divs .div2{
+#custom-divs{
     width: 98%;
     height: 60px;
-    border-top:2px solid gray;
-    display: flex;
-    justify-content: baseline;
     padding-top:  20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    gap: 855px;
+    display: flex;
+    flex-direction: column;
 }
-#custom-divs .div3{
-    width: 98%;
-    height: 60px;
+.more-informations{
     border-top:2px solid gray;
     display: flex;
-    justify-content: baseline;
-    padding-top:  20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    gap: 840px;
-}
-#custom-divs .div4{
-    width: 98%;
-    height: 60px;
-    border-top:2px solid gray;
-    display: flex;
-    justify-content: baseline;
-    padding-top:  20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-bottom:2px solid gray;
-    gap: 940px;
+    justify-content: space-between;
 }
 
 footer{
@@ -212,20 +192,18 @@ footer{
     padding-top: 80px;
     display: flex;
     justify-content: space-between;
+    padding-top: 40px;
 }
 footer .menu {
     display:flex;
     gap: 20px;
     text-decoration: none;
     padding-bottom: 20px;
+    width: 70%;
 }
 footer .menu a{
     color: grey;
     text-decoration: none;
-}
-footer{
-    width: 85%;
-
 }
 .footer{
     display: flex;  
@@ -252,4 +230,30 @@ footer{
     justify-content: end;
     gap: 10px;
     margin-top: 20px;
+}
+@media (max-width: 769px){
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav .items .search-wrapper a svg{
+        width: 15px;
+    }
+    #ul-appended{
+        display: none;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 31px 42px;
+    }
+    footer .input{
+        margin-right: 10px;
+        align-self: flex-end;
+    }
+    .email {
+        width: 209px;
+    }
 }

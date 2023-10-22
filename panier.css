@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
+    background-color: #fff;
 }
 .logo{
     font-family:'Allerta Stencil';
@@ -20,7 +21,6 @@
     font-size: 22px;
     color:#686AA1;
 }
-
 header nav {
     background-color: #fff;
     display: flex;
@@ -29,6 +29,7 @@ header nav {
     padding-left: 50px;
     padding-right: 50px;
     margin-bottom: 10px;
+    max-width: 100%;
 }
 header nav .logo {
     margin: 20px 0;
@@ -56,27 +57,25 @@ header nav ul li a:hover{
     color: #686AA1;
     
 }
+header nav .search-wrapper{
+    display: flex;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
 header nav .search-wrapper svg:first-child {
     margin-right: 15px;
 }
 header nav .search-wrapper svg:last-child {
     margin-left: 15px;
 }
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-}
 
-.cart {
-    width: 96%;
-    height: 70vh;
-    margin: 0 auto;
+.cart{
     background-color: #fff;
+    width: 100%;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     display:block;
 }
 
@@ -84,6 +83,7 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    width: 70%;
 }
 input#product1.product-checkbox{
     margin-right: 15px;
@@ -92,8 +92,8 @@ input#product1.product-checkbox{
     background-color: #f2f2f2;
 }
 .product img {
-    width: 300px;
-    height: 300px;
+    width: 40%;
+    height: 40%;
     object-fit: cover;
     margin-right: 10px;
 }
@@ -166,6 +166,7 @@ footer{
     padding-top: 80px;
     display: flex;
     justify-content: space-between;
+    width: 98%;
 }
 footer .menu {
     display:flex;
@@ -176,10 +177,6 @@ footer .menu {
 footer .menu a{
     color: grey;
     text-decoration: none;
-}
-footer{
-    width: 85%;
-
 }
 .footer{
     display: flex;  
@@ -206,4 +203,30 @@ footer{
     justify-content: end;
     gap: 10px;
     margin-top: 20px;
+}
+@media (max-width: 769px){
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav .items .search-wrapper a svg{
+        width: 15px;
+    }
+    #ul-appended{
+        display: none;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 31px 42px;
+    }
+    footer .input{
+        margin-right: 10px;
+        align-self: flex-end;
+    }
+    .email {
+        width: 209px;
+    }
 }
